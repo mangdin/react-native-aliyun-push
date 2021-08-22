@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "wwwlin" => "188658587@qq.com" }
   spec.ios.deployment_target = "9.0"
   spec.tvos.deployment_target = "9.0"
-  spec.source         = { :git => 'https://github.com/hengkx/react-native-aliyun-push.git', :tag => "v#{spec.version}"}
+  spec.source         = { :git => 'https://github.com/mangdin/react-native-aliyun-push.git', :tag => "v#{spec.version}"}
   spec.source_files  =  "ios/**/*.{h,m}"
 #   spec.dependency 'AlicloudPush', '~> 1.9.9'
     spec.vendored_frameworks = "ios/libs/AlicloudSender.framework","ios/libs/AlicloudUtils.framework","ios/libs/CloudPushSDK.framework","ios/libs/EMASRest.framework","ios/libs/UTMini.framework"
