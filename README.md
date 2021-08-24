@@ -176,6 +176,23 @@ import com.alibaba.sdk.android.push.register.GcmRegister;
   // 添加结束
 
 ```
+
+5. 确保 androidmanifest.xm 中被添加如下代码：
+
+```
+<meta-data
+                android:name="com.vivo.push.api_key"
+                android:value="xxx" />
+        <meta-data
+                android:name="com.vivo.push.app_id"
+                android:value="xxx" />
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="appid=xxx" />
+        <meta-data android:name="com.alibaba.app.appkey" android:value="xxx"/> <!-- 阿里云推送- appKey -->
+        <meta-data android:name="com.alibaba.app.appsecret" android:value="xxx"/> <!-- 阿里云推送的appSecret -->
+    
+```
 	
 	
 
