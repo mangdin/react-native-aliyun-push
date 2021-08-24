@@ -14,7 +14,7 @@
 ReactNative 0.60.x 及以后
 
 ```
-yarn add @hengkx/react-native-aliyun-push
+npm i https://github.com/mangdin/react-native-aliyun-push
 ```
 
 <details>
