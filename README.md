@@ -114,7 +114,8 @@ import com.alibaba.sdk.android.push.register.GcmRegister;
     PushServiceFactory.init(applicationContext);
     CloudPushService pushService = PushServiceFactory.getCloudPushService();
     pushService.setNotificationSmallIcon(R.mipmap.ic_launcher_s);//设置通知栏小图标， 需要自行添加
-    pushService.register(applicationContext, "阿里云appKey", "阿里云appSecret", new CommonCallback() {
+    //pushService.register(applicationContext, "阿里云appKey", "阿里云appSecret", new CommonCallback() {
+    pushService.register(applicationContext, new CommonCallback() {
       @Override
       public void onSuccess(String responnse) {
         // success
@@ -175,6 +176,8 @@ import com.alibaba.sdk.android.push.register.GcmRegister;
   // 添加结束
 
 ```
+	
+	
 
 ### 注意: 如果你使用多个阿里云 SDK, 遇到 alicloud-android-utdid 冲突，
 
