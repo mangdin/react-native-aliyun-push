@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
   spec.source         = { :git => 'https://github.com/mangdin/react-native-aliyun-push.git', :tag => "v#{spec.version}"}
   spec.source_files  =  "ios/**/*.{h,m}"
 #   spec.dependency 'AlicloudPush', '~> 1.9.9'
-    spec.vendored_frameworks = "ios/libs/AlicloudSender.framework","ios/libs/AlicloudUtils.framework","ios/libs/CloudPushSDK.framework","ios/libs/EMASRest.framework","ios/libs/UTMini.framework"
+    spec.vendored_frameworks = "ios/libs/AlicloudSender.framework","ios/libs/AlicloudUtils.framework","ios/libs/CloudPushSDK.framework","ios/libs/EMASRest.framework","ios/libs/UTDID.framework","ios/libs/UTMini.framework"
   spec.libraries = "z", "resolv", "sqlite3"
 
   spec.requires_arc = true
